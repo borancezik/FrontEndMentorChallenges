@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="/Challenge2/css/output.css" rel="stylesheet">
   
   <title>Frontend Mentor | Product preview card component</title>
 
@@ -14,23 +15,30 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
+<body class="text-sm">
+  <div class="top-10 relative">
+    <div class=" m-auto flex flex-row w-130 h-96 rounded-md shadow-2xl">
+      <div class="bg-blue-400 w-1/2 rounded-md bg-cover" style="background-image: url(images/image-product-desktop.jpg)">
+      </div>
+      <div class="p-6 flex flex-col w-1/2 rounded-md gap-y-5">
+        <h1>PERFUME</h1>
+        <a class="font-extrabold">Gabrielle<br> Essence Eau<br> De Parfum</a>
+        <a class="">A floral, solar and voluptuous<br> interpretation composed by<br> Olivier Polge, 
+          Perfumer-Creator<br> for the House of CHANEL.</a>
+        <div class="flex flex-row items-center justify-start gap-x-5">
+          <a>$149.99</a>
+          <a>$169.99</a>
+        </div>
+        <div class="flex flex-row justify-start items-center">
+          <div class="bg-blue-800 text-white w-full sm:w-52 h-10 rounded-md text-center pt-2">Add to Cart</div>
+        </div>
+      </div>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Boran Cezik</a>.
+    </div>
   </div>
 </body>
 </html>
