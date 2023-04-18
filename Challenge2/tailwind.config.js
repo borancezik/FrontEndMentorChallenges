@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        130: "40rem",
+        140: "40rem",
+        135: "35rem",
         128: "32rem",
         110: "28rem",
       },
@@ -16,6 +17,7 @@ module.exports = {
         "dark-grayish-blue": "hsl(228, 12%, 48%)",
       },
       height: {
+        120: "28rem",
         128: "32rem",
         200: "48rem",
       },
