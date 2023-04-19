@@ -6,7 +6,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="/Challenge2/css/output.css" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,22 +20,22 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="text-sm">
+<body class="text-sm font-montserrat">
   <div class="top-10 relative">
-    <div class=" m-auto flex flex-row w-135 h-120 rounded-md shadow-2xl">
-      <div class="bg-blue-400 w-1/2 rounded-md bg-cover" style="background-image: url(images/image-product-desktop.jpg)">
+    <div class="in-main">
+      <div class="left-img">
       </div>
-      <div class="pl-10 pt-5 flex flex-col w-1/2 bg-red-400 rounded-md gap-y-8">
-        <h1>PERFUME</h1>
-        <a class="font-extrabold text-3xl">Gabrielle<br> Essence Eau<br> De Parfum</a>
-        <a class="">A floral, solar and voluptuous<br> interpretation composed by<br> Olivier Polge, 
-          Perfumer-Creator<br> for the House of CHANEL.</a>
+      <div class="right-content">
+        <h1 class="tracking-[.40em] text-gray-500">PERFUME</h1>
+        <a class="font-extrabold text-3xl break-words">Gabrielle Essence Eau De Parfum</a>
+        <a class="break-words">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</a>
         <div class="flex flex-row items-center justify-start gap-x-5">
-          <a class="text-dark-cyan font-extrabold text-3xl">$149.99</a>
-          <a>$169.99</a>
+          <a class="text-dark-cyan font-extrabold text-3xl font-fraunces">$149.99</a>
+          <a class="text-gray-500"><del>$169.99</del></a>
         </div>
         <div class="flex flex-row justify-start items-center">
-          <div class="bg-dark-cyan text-white w-full sm:w-52 h-10 rounded-md text-center pt-2">Add to Cart</div>
+          <div class="bg-dark-cyan text-white w-52 max-sm:w-72 h-10 rounded-md text-center pt-2">Add to Cart</div>
         </div>
       </div>
     </div>

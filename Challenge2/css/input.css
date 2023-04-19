@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base{
+    .in-main{
+        @apply m-auto flex flex-row w-135 h-120 max-sm:h-150 max-sm:w-96 max-sm:flex-col rounded-md shadow-2xl;
+    }
+
+    .left-img{
+        @apply bg-blue-400 w-1/2 max-sm:h-64 max-sm:w-96 rounded-md bg-cover bg-[url('../images/image-product-desktop.jpg')] max-sm:bg-[url('../images/image-product-mobile.jpg')];
+    }
+
+    .right-content{
+        @apply pl-10 pt-5 flex flex-col w-1/2 max-sm:w-full rounded-md gap-y-8 max-sm:gap-y-7;
+    }
+}
